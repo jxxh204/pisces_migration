@@ -3,7 +3,13 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["standard-with-typescript", "plugin:react/recommended"],
+  extends: [
+    "react-app",
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:storybook/recommended",
+  ],
   overrides: [
     {
       env: {
@@ -20,5 +26,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react"],
-  rules: {},
-};
+  rules: {
+    quotes: [2, "single"],
+  },
+}
