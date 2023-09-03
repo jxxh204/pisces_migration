@@ -8,11 +8,8 @@
 !.yarn/sdks
 !.yarn/versions
 
-# Zero-Install을 사용하지 않겠다면?
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
+
+dist
+.storybook
+.vscode
+node_modules
