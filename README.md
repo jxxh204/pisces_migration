@@ -1,27 +1,61 @@
-# React + TypeScript + Vite
+# Pisces migration with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Pisces
 
-Currently, two official plugins are available:
+## **Description**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 프로젝트 이름은 별자리 중 물고기자리를 의미합니다. 의미는 딱히 없고 해당 기간 쯤에 본격적으로 포트폴리오를 기획 하고 제작해서 지었습니다.
+- 컨셉은 macOS 9을 컨셉으로 하고있습니다.
+- VueJS로 제작했던 포트폴리오 사이트를 React로 마이그레이션 합니다.
+- 마이그레이션의 이유는 React를 더욱 잘 사용하는 방법을 터득하기 위해서입니다.
 
-## Expanding the ESLint configuration
+**Design Pattern**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ~~custom hook~~
+- **Compound Component Pattern**
+    - 컴포넌트 가독성면에서 뛰어나 사용.
+- **Render Prop Pattern**
+    - 객체지향에 탁월
 
-- Configure the top-level `parserOptions` property like this:
+**Skills**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- React & Redux
+- yarn berry
+- vite
+- SWC
+- Styled-Component
+- story book
+
+**Library**
+
+- immutable
+- reselect
+- redux-toolkit
+
+## **Environment**
+
+### **Installation**
+
+```jsx
+yarn && npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Run**
+
+```jsx
+yarn dev && npm run dev
+```
+
+**build**
+
+```bash
+yarn build && npm run build
+```
+
+- 빌드 시 /src/server/client 폴더 내부로 결과물이 생성됩니다.
+
+### **Prerequisite**
+
+node version v18.16.0 사용 중.
+
+### **Usage**
